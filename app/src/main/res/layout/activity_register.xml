@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="10dp"
+	android:background="#F6F8FA"
+	tools:context=".RegisterActivity">
+	
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:gravity="center">
+		
+		<!-- Header Section -->
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:background="#3A319C"
+			android:padding="16dp">
+			
+			<ImageView
+				android:layout_width="18dp"
+				android:layout_height="18dp"
+				android:src="@drawable/ic_arrow_back"
+				
+				android:layout_marginEnd="8dp"
+				app:tint="#FFFFFF" />
+			
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Sign up"
+				android:textSize="18sp"
+				android:textColor="#FFFFFF"
+				android:textStyle="bold" />
+		</LinearLayout>
+		
+		<!-- Welcome Message -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Welcome to us,"
+			android:textSize="24sp"
+			android:textStyle="bold"
+			android:textColor="#3A319C"
+			android:layout_marginTop="32dp" />
+		
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Ayoo mulai atur keuangan mu bersama kami"
+			android:textSize="16sp"
+			android:textColor="#6E6E6E" />
+		
+		<!-- Illustration -->
+		<ImageView
+			android:layout_width="160dp"
+			android:layout_height="160dp"
+			android:src="@drawable/ic_regist" />
+		
+		<!-- Name Input -->
+		<EditText
+			android:id="@+id/nameEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Name"
+			android:background="@drawable/edittext_background"
+			android:padding="12dp"
+			android:layout_marginBottom="16dp" />
+		
+		<!-- Text Input -->
+		<EditText
+			android:id="@+id/emailEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Email"
+			android:background="@drawable/edittext_background"
+			android:padding="12dp"
+			android:layout_marginBottom="16dp" />
+		
+		<!-- Password Input -->
+		<EditText
+			android:id="@+id/passwordEditText"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:hint="Password"
+			android:inputType="textPassword"
+			android:background="@drawable/edittext_background"
+			android:padding="12dp"
+			android:layout_marginBottom="16dp" />
+		
+		<!-- Terms and Conditions Checkbox -->
+		<CheckBox
+			android:id="@+id/termsCheckBox"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="By creating an account you agree to our "
+			android:background="@android:color/transparent"
+			android:buttonTint="#3A319C"
+			android:layout_marginBottom="16dp" />
+		
+		<!-- Terms and Conditions Link -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Term and Conditions"
+			android:textColor="#3A319C"
+			android:textStyle="bold" />
+		
+		<!-- Sign Up Button -->
+		<Button
+			android:id="@+id/signUpButton"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="Sign up"
+			android:backgroundTint="#3A319C"
+			android:textColor="#FFFFFF"
+			android:padding="12dp"
+			android:layout_marginTop="16dp"
+			android:layout_marginBottom="16dp"
+			android:enabled="false" />
+		
+		<!-- Sign In Link -->
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Have an account? "
+			android:textSize="14sp"
+			android:textColor="#6E6E6E" />
+		
+		<TextView
+			android:id="@+id/signInTextView"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Sign In"
+			android:textSize="14sp"
+			android:textColor="#3A319C"
+			android:textStyle="bold" />
+	
+	</LinearLayout>
+</ScrollView>

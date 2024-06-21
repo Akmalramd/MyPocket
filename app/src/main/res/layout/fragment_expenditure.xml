@@ -1,0 +1,45 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:padding="16dp">
+	
+	<TextView
+		android:id="@+id/text_view_expenditure"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Input data pengeluaran"
+		android:textColor="#6200EE"
+		android:textSize="16sp"
+		android:layout_marginBottom="16dp"
+		android:layout_centerHorizontal="true" />
+	
+	<EditText
+		android:id="@+id/edit_text_expenditure_type"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Jenis Pengeluaran"
+		android:background="@android:color/transparent"
+		android:padding="12dp"
+		android:layout_below="@id/text_view_expenditure" />
+	
+	<EditText
+		android:id="@+id/edit_text_expenditure_amount"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:hint="Jumlah Rupiah"
+		android:background="@android:color/transparent"
+		android:padding="12dp"
+		android:layout_below="@id/edit_text_expenditure_type"
+		android:layout_marginTop="16dp" />
+	
+	<Button
+		android:id="@+id/button_add_expenditure"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="TAMBAH"
+		android:backgroundTint="#6200EE"
+		android:textColor="#FFFFFF"
+		android:layout_below="@id/edit_text_expenditure_amount"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="16dp" />
+</RelativeLayout>

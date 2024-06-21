@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".SavingsFragment">
+	
+	<!-- Top button with icon and text -->
+	<LinearLayout
+		android:id="@+id/button_container"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_centerHorizontal="true"
+		android:layout_marginTop="16dp"
+		android:background="@drawable/rounded_corner_button"
+		android:padding="16dp"
+		android:elevation="4dp">
+		
+		<ImageView
+			android:id="@+id/add_icon"
+			android:layout_width="48dp"
+			android:layout_height="48dp"
+			android:src="@drawable/ic_add"
+			android:layout_gravity="center" />
+		
+		<TextView
+			android:id="@+id/add_text"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Tambahkan"
+			android:layout_gravity="center"
+			android:textColor="@android:color/black"
+			android:textSize="16sp" />
+	</LinearLayout>
+	
+	<!-- Blue container with text -->
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical"
+		android:layout_below="@id/button_container"
+		android:layout_marginTop="32dp"
+		android:layout_marginStart="16dp"
+		android:layout_marginEnd="16dp"
+		android:padding="16dp"
+		android:background="@drawable/blue_rounded_corner_container"
+		android:elevation="4dp">
+		
+		<TextView
+			android:id="@+id/savings_title"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Vespa Abu"
+			android:textSize="24sp"
+			android:textColor="@color/blue"
+			android:textStyle="bold"
+			android:layout_gravity="center" />
+		
+		<TextView
+			android:id="@+id/savings_estimate_label"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Estimasi"
+			android:textSize="18sp"
+			android:textColor="@color/blue"
+			android:layout_gravity="center"
+			android:layout_marginTop="8dp" />
+		
+		<TextView
+			android:id="@+id/savings_estimate_days"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="11 Bulan"
+			android:textSize="20sp"
+			android:textColor="@android:color/white"
+			android:background="@drawable/blue_rounded_background"
+			android:padding="8dp"
+			android:layout_gravity="center"
+			android:layout_marginTop="8dp" />
+		
+		<TextView
+			android:id="@+id/savings_amount_per_day"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:text="Rp.900.000/Bulan"
+			android:textSize="18sp"
+			android:textColor="@color/blue"
+			android:layout_gravity="center"
+			android:layout_marginTop="8dp" />
+	</LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/nav_graph"
+	app:startDestination="@id/homeFragment">
+	
+	<fragment
+		android:id="@+id/homeFragment"
+		android:name="com.capstone.mypocket.HomeFragment"
+		android:label="fragment_home"
+		tools:layout="@layout/fragment_home" />
+	<fragment
+		android:id="@+id/transactionFragment"
+		android:name="com.capstone.mypocket.TransactionFragment"
+		android:label="fragment_transaction"
+		tools:layout="@layout/fragment_transaction" />
+	<fragment
+		android:id="@+id/savingsFragment"
+		android:name="com.capstone.mypocket.SavingsFragment"
+		android:label="fragment_savings"
+		tools:layout="@layout/fragment_savings" >
+		<action
+			android:id="@+id/action_savingsFragment_to_newPageFragment"
+			app:destination="@id/newPageFragment" />
+	</fragment>
+	
+	<fragment
+		android:id="@+id/newPageFragment"
+		android:name="com.capstone.mypocket.AddSavingsFragment"
+		tools:layout="@layout/fragment_add_savings" />
+
+</navigation>
