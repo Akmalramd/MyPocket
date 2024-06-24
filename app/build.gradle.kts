@@ -50,6 +50,7 @@ dependencies {
     implementation("androidx.navigation:navigation-ui-ktx:2.5.3")
     implementation("com.google.android.material:material:1.8.0")
     testImplementation(libs.junit)
+    implementation("com.squareup.okhttp3:okhttp:4.9.3")
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
 }

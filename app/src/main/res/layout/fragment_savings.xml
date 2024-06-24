@@ -35,59 +35,28 @@
 	</LinearLayout>
 	
 	<!-- Blue container with text -->
-	<LinearLayout
+	<ScrollView
 		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:orientation="vertical"
+		android:layout_height="match_parent"
 		android:layout_below="@id/button_container"
-		android:layout_marginTop="32dp"
-		android:layout_marginStart="16dp"
-		android:layout_marginEnd="16dp"
-		android:padding="16dp"
-		android:background="@drawable/blue_rounded_corner_container"
-		android:elevation="4dp">
+		android:layout_marginTop="16dp">
 		
-		<TextView
-			android:id="@+id/savings_title"
-			android:layout_width="wrap_content"
+		<LinearLayout
+			android:id="@+id/savingsContainer"
+			android:layout_width="match_parent"
 			android:layout_height="wrap_content"
-			android:text="Vespa Abu"
-			android:textSize="24sp"
-			android:textColor="@color/blue"
-			android:textStyle="bold"
-			android:layout_gravity="center" />
-		
-		<TextView
-			android:id="@+id/savings_estimate_label"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Estimasi"
-			android:textSize="18sp"
-			android:textColor="@color/blue"
-			android:layout_gravity="center"
-			android:layout_marginTop="8dp" />
-		
-		<TextView
-			android:id="@+id/savings_estimate_days"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="11 Bulan"
-			android:textSize="20sp"
-			android:textColor="@android:color/white"
-			android:background="@drawable/blue_rounded_background"
-			android:padding="8dp"
-			android:layout_gravity="center"
-			android:layout_marginTop="8dp" />
-		
-		<TextView
-			android:id="@+id/savings_amount_per_day"
-			android:layout_width="wrap_content"
-			android:layout_height="wrap_content"
-			android:text="Rp.900.000/Bulan"
-			android:textSize="18sp"
-			android:textColor="@color/blue"
-			android:layout_gravity="center"
-			android:layout_marginTop="8dp" />
-	</LinearLayout>
+			android:orientation="vertical"
+			android:elevation="4dp"
+			android:layout_marginStart="16dp"
+			android:layout_marginEnd="16dp" />
+	
+	</ScrollView>
+	
+	<ProgressBar
+		android:id="@+id/progressBar"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_centerInParent="true"
+		android:visibility="gone" />
 
 </RelativeLayout>

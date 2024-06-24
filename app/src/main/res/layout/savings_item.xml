@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:layout_marginTop="32dp"
+	android:layout_marginHorizontal="20dp"
+	android:layout_marginStart="16dp"
+	android:layout_marginEnd="16dp"
+	android:padding="16dp"
+	android:background="@drawable/blue_rounded_corner_container"
+	android:elevation="4dp">
+	
+	<TextView
+		android:id="@+id/savings_title"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Saving Title"
+		android:textSize="24sp"
+		android:textColor="@color/blue"
+		android:textStyle="bold"
+		android:layout_gravity="center" />
+	
+	<TextView
+		android:id="@+id/savings_estimate_label"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Estimasi"
+		android:textSize="18sp"
+		android:textColor="@color/blue"
+		android:layout_gravity="center"
+		android:layout_marginTop="8dp" />
+	
+	<TextView
+		android:id="@+id/savings_estimate_days"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Estimate Days"
+		android:textSize="20sp"
+		android:textColor="@android:color/white"
+		android:background="@drawable/blue_rounded_background"
+		android:padding="8dp"
+		android:layout_gravity="center"
+		android:layout_marginTop="8dp" />
+	
+	<TextView
+		android:id="@+id/savings_amount_per_day"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:text="Amount Per Day"
+		android:textSize="18sp"
+		android:textColor="@color/blue"
+		android:layout_gravity="center"
+		android:layout_marginTop="8dp" />
+</LinearLayout>
